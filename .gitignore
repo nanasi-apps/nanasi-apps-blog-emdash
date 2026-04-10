@@ -41,6 +41,10 @@ uploads/
 
 # jetbrains setting folder
 .idea/
+dist
+.astro
+uploads
+data.db
 .wrangler
 
 # Playwright E2E testing
