@@ -16,6 +16,7 @@
 		"test:e2e:ui": "playwright test --ui",
 		"build": "pnpm run --filter {./packages/**} build",
 		"postbuild": "node scripts/relink-bins-if-needed.mjs",
+		"deploy": "astro build && wrangler deploy",
 		"format": "oxfmt --ignore-path .gitignore && prettier --write .",
 		"format:check": "oxfmt --ignore-path .gitignore --check && prettier --check .",
 		"format:astro": "prettier --write .",
@@ -50,7 +51,8 @@
 		"oxlint-tsgolint": "^0.15.0",
 		"prettier": "^3.8.1",
 		"prettier-plugin-astro": "^0.14.1",
-		"typescript": "6.0.0-beta"
+		"typescript": "6.0.0-beta",
+		"wrangler": "catalog:"
 	},
 	"packageManager": "pnpm@10.28.0",
 	"engines": {
@@ -62,5 +64,15 @@
 			"esbuild",
 			"workerd"
 		]
+	},
+	"dependencies": {
+		"@astrojs/cloudflare": "catalog:",
+		"@astrojs/react": "catalog:",
+		"@emdash-cms/cloudflare": "workspace:*",
+		"@emdash-cms/plugin-forms": "workspace:*",
+		"@emdash-cms/plugin-webhook-notifier": "workspace:*",
+		"astro": "catalog:",
+		"react": "catalog:",
+		"react-dom": "catalog:"
 	}
 }
