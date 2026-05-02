@@ -1,11 +1,12 @@
 {
-	"extends": "../../tsconfig.json",
+	"extends": "../../tsconfig.base.json",
 	"compilerOptions": {
 		"outDir": "./dist",
 		"rootDir": "./src",
 		"declaration": true,
 		"declarationMap": true,
 		"noUncheckedIndexedAccess": false,
+		"lib": ["es2024", "DOM", "DOM.Iterable", "esnext.typedarrays"],
 		"types": ["astro/client"]
 	},
 	"include": ["src/**/*"],
