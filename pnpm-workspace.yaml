@@ -19,13 +19,13 @@ catalog:
   "@astrojs/node": ^10.0.0
   "@astrojs/react": ^5.0.0
   "@cloudflare/workers-types": ^4.20260305.1
+  "@iconify-json/ph": ^1.2.2
   "@lingui/babel-plugin-lingui-macro": ^5.9.4
   "@lingui/cli": ^5.9.4
   "@lingui/conf": ^5.9.4
   "@lingui/core": ^5.9.4
   "@lingui/macro": ^5.9.4
   "@lingui/react": ^5.9.4
-  "@iconify-json/ph": ^1.2.2
   "@oslojs/crypto": ^1.0.1
   "@oslojs/encoding": ^1.1.0
   "@oslojs/webauthn": ^1.0.0
