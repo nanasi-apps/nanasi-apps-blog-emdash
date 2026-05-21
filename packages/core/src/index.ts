@@ -27,7 +27,7 @@ export type {
 export type { MediaItem, CreateMediaInput } from "./database/repositories/media.js";
 
 // Fields
-export { portableText, image, reference } from "./fields/index.js";
+export { portableText, image, file, reference } from "./fields/index.js";
 export { normalizeMediaValue } from "./media/normalize.js";
 export { generatePlaceholder } from "./media/placeholder.js";
 export type { PlaceholderData } from "./media/placeholder.js";
@@ -164,6 +164,7 @@ export type {
 	WxrAttachment,
 	WxrCategory,
 	WxrTag,
+	WxrTerm,
 	WxrAuthor,
 } from "./cli/wxr/parser.js";
 
@@ -188,7 +189,6 @@ export { EmDashStorageError } from "./storage/types.js";
 export {
 	definePlugin,
 	adaptSandboxEntry,
-	isStandardPluginDefinition,
 	pluginManifestSchema,
 	createHookPipeline,
 	HookPipeline,
@@ -243,16 +243,9 @@ export type {
 	CollectionCommentSettings,
 	StoredComment,
 
-	// Standard plugin format
-	StandardPluginDefinition,
-	StandardHookHandler,
-	StandardHookEntry,
-	StandardRouteHandler,
-	StandardRouteEntry,
-
-	// Sandbox types
+	// Sandbox runtime types
 	SandboxRunner,
-	SandboxedPlugin,
+	SandboxedPluginInstance,
 	SandboxRunnerFactory,
 	SandboxOptions,
 	SandboxEmailMessage,
