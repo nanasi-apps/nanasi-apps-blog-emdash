@@ -43,7 +43,6 @@
 		"@playwright/test": "^1.58.0",
 		"@types/node": "catalog:",
 		"@typescript/native-preview": "7.0.0-dev.20260421.2",
-		"emdash": "workspace:*",
 		"knip": "^5.84.1",
 		"oxfmt": "^0.34.0",
 		"oxlint": "^1.49.0",
@@ -71,6 +70,7 @@
 		"@emdash-cms/plugin-forms": "workspace:*",
 		"@emdash-cms/plugin-webhook-notifier": "workspace:*",
 		"astro": "catalog:",
+		"emdash": "workspace:*",
 		"react": "catalog:",
 		"react-dom": "catalog:"
 	}
